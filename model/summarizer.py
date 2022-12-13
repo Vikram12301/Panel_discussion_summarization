@@ -1,4 +1,13 @@
 class Overall_Summary():
+    """
+    This a class for returning the summary of the discussion
+    Class Members
+    ----------
+    spkrwise_df  : string
+        path of the speakerwise text datafame 
+    token : string
+        Hugging face token
+    """
     def __init__(self,spkrwise_df,token):
         self.spkrwise_df = spkrwise_df
         self.token = token
