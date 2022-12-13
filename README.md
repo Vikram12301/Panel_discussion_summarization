@@ -11,3 +11,6 @@
 <p> The overall summary of the file is then obtained using hugging face's "/knkarthick/MEETING_SUMMARY" </p>
 
 
+## How to run the code?
+
+<p> It is easy to execute the code in google colab by just uploading the .mp3 file and running all the cells</p>
