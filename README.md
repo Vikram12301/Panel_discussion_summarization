@@ -14,3 +14,8 @@
 ## How to run the code?
 
 <p> It is easy to execute the code in google colab by just uploading the .mp3 file and running all the cells</p>
+
+## Results
+
+<p> In CPU it took 45 minutes to execute the entire code for the audio uploaded</p>
+<p> In GPU it took less than a minute to execute the entire code for the audio uploaded</p>
