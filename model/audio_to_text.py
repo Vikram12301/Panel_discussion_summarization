@@ -10,6 +10,13 @@ import pandas as pd
 
 
 class mp3_2_wav():
+    """
+    This a class for converting mp3 file to wav file
+    Class Members
+    ----------
+    name  : string
+        path of the mp3 file
+    """
     def __init__(self,name):
         self.name = name
     def convert(self):
@@ -19,7 +26,15 @@ class mp3_2_wav():
         return name 
 
 class Diarization():
-    
+  """
+  This class is to identify the start and duration of each speaker throughout the mp3 file
+  Class Members
+  ----------
+  name  : string
+        path of the wav file
+  token: string
+        Hugging face token
+  """ 
   def __init__(self,wav_file,token):
     self.token = token
     self.wav_file = wav_file
@@ -36,7 +51,13 @@ class Diarization():
     return name
 
 class rttm_2_df():
-      
+  """
+  This class is to convert the rttm file to csv file
+  Class Members
+  ----------
+  rttm  : string
+      path of the rttm file  
+  """     
   def __init__(self,rttm):
 
     self.rttm = rttm
@@ -61,6 +82,16 @@ class rttm_2_df():
         return 'output.csv'
 
 class Extractor():
+    
+  """
+  This class saves the audio files speakerwise
+  Class Members
+  ----------
+  csv_name  : string
+      path of the rttm file  
+  wav_file_name : string
+      path of wav file
+  """ 
     def __init__(self,csv_name,wav_file_name):
         self.csv_name = csv_name
         self.wav_file_name = wav_file_name
@@ -83,6 +114,16 @@ class Extractor():
         return 'audio_files'
 
 class user_wise_text():
+
+  """
+  This class saves the text speakerwise
+  Class Members
+  ----------
+  audio_files  : string
+      path of the audio files durectory
+  diarization_csv : string
+      path of csv file
+  """ 
     def __init__(self,audio_files,diarization_csv):
         self.audio_files = audio_files
         self.diarization_csv = diarization_csv
